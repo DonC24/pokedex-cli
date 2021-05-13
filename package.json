@@ -12,6 +12,7 @@
     "hello": "./bin/index.js"
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "yargs": "^17.0.1"
   }
 }
