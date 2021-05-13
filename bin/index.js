@@ -53,6 +53,7 @@ axios.get(url, { headers: { Accept: "application/json" } })
     })
     .then(info => { return axios.get(`https://pokeapi.co/api/v2/pokemon/${info}/encounters`)})
     .then(res2 => {
+        console.log("\n Encounters: ")
         res2.data.forEach( i => {
                 let loc_name = i.location_area.name;
                 let loc_kan = loc_name.search("kanto");
